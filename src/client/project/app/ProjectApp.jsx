@@ -1,12 +1,12 @@
 import React, { Component, PropTypes } from 'react';
-import { Route, Router } from 'react-router';
+import { browserHistory, IndexRoute, Route, Router } from 'react-router';
 import { render } from 'react-dom';
 
 export default class ProjectApp extends Component {
     render() {
         return (
             <div>
-                Hello
+                Hello react
             </div>
         );
     }
@@ -14,9 +14,8 @@ export default class ProjectApp extends Component {
 
 $(() => {
   render(
-      <Router>
-          <Route path="/" component={ProjectApp}>
-                <Route path="about" component={About} />
+      <Router history={browserHistory}>
+          <Route path="/project/app" component={ProjectApp}>
           </Route>
-    </Router>, document.body);
+      </Router>, document.getElementById('projectApp'));
 });

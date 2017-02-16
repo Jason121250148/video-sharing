@@ -17,5 +17,5 @@ $(() => {
       <Router history={browserHistory}>
           <Route path="/project/app" component={ProjectApp}>
           </Route>
-      </Router>, document.getElementById('projectApp'));
+      </Router>, document.getElementById('project-app'));
 });

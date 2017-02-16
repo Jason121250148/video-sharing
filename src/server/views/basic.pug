@@ -2,6 +2,10 @@ doctype html
 html
     head
         title Share your video screen.
-        script(src=app.getAssetUrl('/js/vendor.min.js'))
+        block styles
+            link(rel='stylesheet', href=app.getAssetUrl('/css/common.min.css'))
+
+        block scripts
+            script(src=app.getAssetUrl('/js/vendor.min.js'))
     body
         block content

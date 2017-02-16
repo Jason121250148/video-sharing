@@ -3,6 +3,11 @@ extends ../basic.pug
 block append styles
     link(rel='stylesheet', href=app.getAssetUrl('/css/project-app.min.css'))
 
+block append scripts
+    // script(src='http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js')
+    // script(src='http://7xjfim.com2.z0.glb.qiniucdn.com/h5_Iva.js')
+    script(src='http://cytron.cdn.videojj.com/latest/cytron.core.js')
+
 block append content
     #project-app
     script(src=app.getAssetUrl('/js/project-app.min.js'))

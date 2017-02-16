@@ -1,5 +1,8 @@
 extends ../basic.pug
 
+block append styles
+    link(rel='stylesheet', href=app.getAssetUrl('/css/project-app.min.css'))
+
 block append content
-    #projectApp
+    #project-app
     script(src=app.getAssetUrl('/js/project-app.min.js'))

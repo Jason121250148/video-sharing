@@ -2,10 +2,10 @@ doctype html
 html
     head
         title Share your video screen.
+        block styles
+            link(rel='stylesheet', href=app.getAssetUrl('/css/common.min.css'))
 
-        link(rel='stylesheet', href=app.getAssetUrl('/css/project-app.min.css'))
-
-        script(src=app.getAssetUrl('/js/vendor.min.js'))
+        block scripts
+            script(src=app.getAssetUrl('/js/vendor.min.js'))
     body
-        #project-app
         block content

@@ -6,6 +6,7 @@ module.exports = {
     context: path.resolve('./src/client'),
     entry: {
         vendor: ['babel-polyfill', 'jquery', 'react'],
+        'common': ['./common/res/common.less'],
         'project-app': ['./project/app/ProjectApp.jsx', './project/res/index.less']
     },
     resolve: {
